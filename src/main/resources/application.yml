@@ -1,0 +1,18 @@
+server:
+  port: 9898
+
+mongodb:
+  uri: mongodb+srv://hacomtest:gbOSAEz3vUFN23HG@clusterjohan.gha8p.mongodb.net/?retryWrites=true&w=majority&appName=ClusterJohan
+  database: BDJohanDev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+
